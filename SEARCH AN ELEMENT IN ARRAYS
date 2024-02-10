@@ -1,0 +1,25 @@
+//SOLUTION TO Q1 SEARCH AN ELEMENT IN AN ARRAY;
+#include<iostream>
+using namespace std;
+int linearsearch(int arr[] , int n, int X){
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] == X){
+            return i;
+        }
+    }
+    return -1;
+}
+int main(){
+    int n;
+    cin>>n;
+    int data[n];
+    for(int i = 0 ; i < n ; i++){
+        cin>>data[i];
+    }
+    cout<<"enter the element to be searched in the array";
+    int k;
+    cin>>k;
+  int b =   linearsearch(data,n,k);
+    cout<<"the element is found at index"<<b;
+    return 0;
+}
